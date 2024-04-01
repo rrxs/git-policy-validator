@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node esbuild",
-    "build:dev": "NODE_ENV=development node esbuild"
+    "build:dev": "NODE_ENV=development node esbuild",
+    "publish": "npm run build && np --no-tests"
   },
   "bin": {
     "gvalidate": "bin/index.js"
