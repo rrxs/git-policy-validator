@@ -30,12 +30,10 @@ You must use a config file named `.gvalidate.config.json`. Example config file.
 {
   "branch": {
     "regexBranchName": "(feat|fix)/[A-Z]+-[0-9]+",
-    "branchErrorMessage": "",
     "ignoreList": []
   },
   "commit": {
-    "regexCommitMessage": "(feat|fix): [A-Z]+-[0-9]+ - .*",
-    "commitErrorMessage": ""
+    "regexCommitMessage": "(feat|fix): [A-Z]+-[0-9]+ - .*"
   }
 }
 ```
