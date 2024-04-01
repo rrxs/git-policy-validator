@@ -11,9 +11,9 @@
   "bin": {
     "gvalidate": "bin/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": "rrxs/git-policy-validator",
+  "author": "Robson Xavier <robsonrxsilva@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "colors": "^1.4.0"
   },
