@@ -1,5 +1,5 @@
 {
-  "name": "@rrxs/git-policy-validator",
+  "name": "git-policy-validator",
   "version": "1.0.0",
   "description": "Validate commit messages and branch names by regex rules",
   "main": "index.js",
