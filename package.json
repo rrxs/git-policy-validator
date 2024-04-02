@@ -11,7 +11,10 @@
   "bin": {
     "gvalidate": "bin/index.js"
   },
-  "repository": "rrxs/git-policy-validator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrxs/git-policy-validator.git"
+  },
   "author": "Robson Xavier <robsonrxsilva@gmail.com>",
   "license": "MIT",
   "dependencies": {
