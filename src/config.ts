@@ -38,19 +38,15 @@ export const getConfig = async (): Promise<Config | undefined> => {
 
 export const createConfig = async (): Promise<Config | undefined> => {
   try {
-    try {
-      console.log("Creating default config file...");
-      const content = JSON.stringify(DEFAULT_CONFIG_FILE, undefined, 2);
+    console.log("Creating default config file...");
+    const content = JSON.stringify(DEFAULT_CONFIG_FILE, undefined, 2);
 
-      await promisify(fs.writeFile)(CONFIG_FILE_NAME, content);
+    await promisify(fs.writeFile)(CONFIG_FILE_NAME, content);
 
-      console.log("Config file created");
+    console.log("Config file created");
 
-      return DEFAULT_CONFIG_FILE;
-    } catch (e) {
-      throw new Error(`Couldn't create config file`);
-    }
-  } catch (error) {
-    console.log("Erro on create config file", error);
+    return DEFAULT_CONFIG_FILE;
+  } catch (e) {
+    throw new Error(`Couldn't create config file`);
   }
 };
